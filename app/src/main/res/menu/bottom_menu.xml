@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="@string/home"
+        android:id="@+id/menu_home"
+        android:icon="@drawable/rounded_home_24"/>
+    <item android:title="@string/analysis"
+        android:id="@+id/menu_analysis"
+        android:icon="@drawable/rounded_bar_chart_4_bars_24"/>
+    <item android:title="@string/scan"
+        android:id="@+id/menu_scan"
+        android:icon="@drawable/rounded_document_scanner_24"/>
+<!--    <item android:title="@string/notifications"-->
+<!--        android:id="@+id/menu_notifications"-->
+<!--        android:icon="@drawable/rounded_notifications_24"/>-->
+    <item android:title="@string/settings"
+        android:id="@+id/menu_settings"
+        android:icon="@drawable/rounded_settings_24"/>
+</menu>

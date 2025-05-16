@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.scan.ScanFragment"
+    android:background="@color/material_dynamic_neutral90">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_marginStart="45dp"
+            android:layout_marginEnd="45dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:minHeight="200dp"
+            android:background="@drawable/card"
+            android:padding="12dp">
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/rounded_photo_camera_24"/>
+            <ImageView
+                android:id="@+id/imagePreview"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="16dp"
+                android:scaleType="centerCrop"
+                android:background="#EEE"
+                android:visibility="gone"/>
+            <TextView
+                android:id="@+id/tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Scan barcode produk untuk melihat analisis dampak lingkungan"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnOpenCamera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ambil Foto Struk"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="@color/dark_green"/>
+
+
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:visibility="gone" />
+    </LinearLayout>
+</FrameLayout>
